@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="navbar">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+	<div class="container">
+
+    <section id="menu">
+		<div class="menu-item">
+			<img src="pizza.png" alt="Pizza" class="menu-img">
+			<h3>Pizza</h3>
+			<p>$10.00</p>
+			<button onclick="addItemToCheckout('Pizza', 10)">Add to checkout</button>
+		</div>
+		<div class="menu-item">
+			<img src="burger.png" alt="Burger" class="menu-img">
+			<h3>Burger</h3>
+			<p>$8.00</p>
+			<button onclick="addItemToCheckout('Burger', 8)">Add to checkout</button>
+		</div>
+		<div class="menu-item">
+			<img src="sushi.png" alt="Sushi" class="menu-img">
+			<h3>Sushi</h3>
+			<p>$12.00</p>
+			<button onclick="addItemToCheckout('Sushi', 12)">Add to checkout</button>
+		</div>
+    </section>
+
+    <section id="checkout">
+        <h2>Checkout</h2>
+        <div id="checkout-items"></div>
+        <div id="total-amount">
+            <h3>Total: $<span>0</span></h3>
+        </div>
+    </section>
+	</div>
+    <script src="script.js"></script> <!-- Link to external JS file -->
+</body>
+</html>

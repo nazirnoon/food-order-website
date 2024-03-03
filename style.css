@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the navigation bar */
+nav {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+#navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar li {
+    padding: 0 15px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+#navbar a:hover {
+    color: #ddd;
+}
+
+#navbar ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for the menu and checkout sections */
+section {
+    padding: 20px;
+    flex-basis: 50%;
+
+}
+#menu {
+    padding-right: 10px; 
+    flex-grow: 1; 
+}
+
+#checkout {
+    padding-left: 10px;
+    border-left: 1px solid #ddd; 
+    flex-basis: 300px; 
+    flex-shrink: 0;
+}
+
+.checkout-item {
+    padding: 10px;
+    border-bottom: 1px dashed #ccc;
+    margin-bottom: 10px;
+}
+
+.menu-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Add a little space between item name and add button */
+.menu-item h3 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.menu-img {
+    width: 30%; /* Example: adjust this value as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optionally round the corners */
+    margin-bottom: 10px; /* Space below the image */
+    display: block; /* Ensures the image is treated as a block-level element which allows width manipulation */
+    margin-left: auto; /* Combined with margin-right: auto, this centers the image */
+    margin-right: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
